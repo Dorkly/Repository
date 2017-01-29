@@ -34,15 +34,19 @@ public class Person4 {
       if (input == null) {
         return null;
       }
-      String[] strArr = new String[input.length()];
-      StringBuilder strBuilder = new StringBuilder();
-      char one = 1;
+      char[] chars = new char[input.length()];
       for (int i = 0; i < input.length(); i++) {
-        strArr[i] = Character.toString((char)(input.charAt(i)+1));
-        strBuilder.append(strArr[i]);
+        if (input.charAt(i) == '9'){
+          chars[i] = '0';
+        }else if (input.charAt(i)== 'z'){
+          chars[i] = 'a';
+        }else if (input.charAt(i) == 'Z'){
+          chars[i] = 'A';
+        }else {
+          chars[i] = (char) (input.charAt(i) + 1);
+        }
       }
-      //System.out.println("Output: " + strBuilder.toString());
-      return strBuilder.toString();
+      return new String(chars);
     }
     
     /**
