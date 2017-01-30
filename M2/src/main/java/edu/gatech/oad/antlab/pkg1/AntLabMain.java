@@ -73,19 +73,8 @@ import edu.gatech.oad.antlab.pkg2.*;
                   toPrint += p4.toString("gburdell4");
                   //Person5 replace P4 with your name
                   //and gburdell5 with your gt id
-<<<<<<< HEAD
-                  Person5 p5 = new Person5("P5");
-                  toPrint += p5.toString("gburdell5");
-<<<<<<< HEAD
-
-=======
                   Person5 p5 = new Person5("Hannah Guthrie");
                   toPrint += p5.toString("hguthrie6");
-		  
->>>>>>> dc6567c8b09903ecf8096f4f7cb420b2e9642919
-=======
-		  
->>>>>>> parent of 73fdcbb... BreeFiles
         System.out.println(toPrint);
         
         
