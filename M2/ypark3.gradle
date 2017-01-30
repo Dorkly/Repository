@@ -34,7 +34,7 @@ dependencies {
 
 version = 1.0
 defaultTasks 'jar'
-// sourceCompatibility = 1.8
+sourceCompatibility = 1.8
 
 jar {
     description = 'Creates the executable jar file for this project'
@@ -42,27 +42,27 @@ jar {
         attributes 'Main-Class' : 'edu.gatech.oad.antlab.pkg1.AntLabMain',
                 'Class-Path' : '../../lib/resources.jar'
     }
-    println 'Creating jar'
+    println 'Creating the executable jar file for this project'
 }
 
 task compileTest(dependsOn: compileTestJava) << {
     description = 'Compiles the unit tests for the project'
-    println 'compiles the unit tests for the project'
+    println 'Compiling the unit tests for the project'
 }
 
 test << {
     decription = 'Runs unit tests'
-    println 'running unit tests'
+    println 'Running unit tests'
 }
 
 compileJava << {
     description = 'Compiles and builds java files'
-    println 'Compile Java'
+    println 'Compiling and building java files'
 }
 
 javadoc << {
     description = 'Generates Javadoc API'
-    println 'Javadoc'
+    println 'Generating Javadoc API'
 }
 
 clean << {
