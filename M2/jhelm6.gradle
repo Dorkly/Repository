@@ -43,5 +43,5 @@ jar {
     }
 }
 dependencies {
-    compile fileTree(dir: 'lib', include: '*jar')
+    compile fileTree(dir: 'lib', include: 'resources.jar')
 }
