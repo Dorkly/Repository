@@ -34,7 +34,7 @@ public class Person2 {
 		char[] charArray = input.toCharArray();
 		int stringSize = charArray.length;
 		java.util.Random r = new java.util.Random();
-		String newString = "";
+		String newString = ":";
 		for(int i = 0; i < charArray.length; i++) {
 			int randomInt = r.nextInt(stringSize);
 			newString += charArray[randomInt];
@@ -44,7 +44,7 @@ public class Person2 {
 			stringSize--;
 		}
 
-		return newString;
+		return newString + " ";
 	}
 	/**
 	 * Return a string rep of this object
