@@ -1,2 +1,4 @@
-Young Parkypark3@gatech.eduich liebe dich
+Young Park
+ypark3@gatech.edu
+ich liebe dich
 
